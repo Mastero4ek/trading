@@ -2,4 +2,15 @@
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 8" id="arrow-header">
     <path d="M1 1.5l5 5 5-5" stroke-width="2"></path>
   </symbol>
+
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" id="arrow">
+    <g clip-path="url(#clip0_27_2375)">
+      <path d="M5.963 4.139v3.878h12.862L2.768 24.074l2.742 2.741 16.057-16.057V23.62h3.878V4.14H5.963z"></path>
+    </g>
+    <defs>
+      <clipPath id="clip0_27_2375">
+        <path fill="#fff" d="M0 0h30v30H0z"></path>
+      </clipPath>
+    </defs>
+  </symbol>
 </svg>
