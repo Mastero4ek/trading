@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script defer src="js/script.js"></script>
+
+    <title></title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="container">
+                <div class="header__logo logo">
+                    <a href="./index.html" class="logo__link">
+                        <img src="" alt="logo" class="logo__img">
+                    </a>
+                </div>
+
+                <nav class="header__nav nav">
+                    <ul class="nav__wrapper">
+                        <li class="nav__item">
+                            <a href="./index.html" class="nav__item-head">home</a>
+                        </li>
+
+                        <li class="nav__item dropbox dropbox--side">
+                            <a href="#" class="nav__item-head dropbox__header">
+                                <span>trading</span>
+                                <svg class="icon">
+                                    <use xlink:href="./img/icons.svg#arrow-header"></use>
+                                </svg>
+                            </a>
+
+                            <ul id="trading" class="nav__item-body dropbox__body dropbox__body--side">
+                                <li class="dropbox__body-item">
+                                    <a href="./markets.html" class="dropbox__body-link">Markets</a>
+                                </li>
+
+                                <li class="dropbox__body-item">
+                                    <a href="./accounts.html" class="dropbox__body-link">Accounts</a>
+                                </li>
+
+                                <li class="dropbox__body-item">
+                                    <a href="#" class="dropbox__body-link">Deposits</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav__item dropbox dropbox--side">
+                            <a href="#" class="nav__item-head dropbox__header">
+                                <span>company</span>
+                                <svg class="icon">
+                                    <use xlink:href="./img/icons.svg#arrow-header"></use>
+                                </svg>
+                            </a>
+
+                            <ul id="company" class="nav__item-body dropbox__body dropbox__body--side">
+                                <li class="dropbox__body-item">
+                                    <a href="#" class="dropbox__body-link">About</a>
+                                </li>
+
+                                <li class="dropbox__body-item">
+                                    <a href="#" class="dropbox__body-link">Us Careers</a>
+                                </li>
+
+                                <li class="dropbox__body-item">
+                                    <a href="#" class="dropbox__body-link">Contact Us</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav__item dropbox dropbox--side">
+                            <a href="#" class="nav__item-head dropbox__header">
+                                <span>learn</span>
+                                <svg class="icon">
+                                    <use xlink:href="./img/icons.svg#arrow-header"></use>
+                                </svg>
+                            </a>
+
+                            <ul id="learn" class="nav__item-body dropbox__body dropbox__body--side">
+                                <li class="dropbox__body-item">
+                                    <a href="#" class="dropbox__body-link">Trading Hours</a>
+                                </li>
+
+                                <li class="dropbox__body-item">
+                                    <a href="#" class="dropbox__body-link">Economic Calendar</a>
+                                </li>
+
+                                <li class="dropbox__body-item">
+                                    <a href="#" class="dropbox__body-link">Trading FAQ</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav__item lang">
+                            <ul class="lang__list">
+                                <li class="lang__item">
+                                    <a href="#" class="lang__link">En</a>
+                                </li>
+
+                                <li class="lang__item">
+                                    <a href="#" class="lang__link">Es</a>
+                                </li>
+
+                                <li class="lang__item">
+                                    <a href="#" class="lang__link">De</a>
+                                </li>
+
+                                <li class="lang__item">
+                                    <a href="#" class="lang__link">It</a>
+                                </li>
+
+                                <li class="lang__item">
+                                    <a href="#" class="lang__link">Sv</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- <div class="nav__item lang">
+							<li class="lang__item-head ">
+								<a href="#" class="lang__link">En</a>
+
+								<ul class="lang__item-body">
+									<li class="lang__item">
+										<a href="#" class="lang__link">Es</a>
+									</li>
+
+									<li class="lang__item">
+										<a href="#" class="lang__link">De</a>
+									</li>
+
+									<li class="lang__item">
+										<a href="#" class="lang__link">It</a>
+									</li>
+
+									<li class="lang__item">
+										<a href="#" class="lang__link">Sv</a>
+									</li>
+								</ul>
+							</li>
+						</div> -->
+
+                        <a href="#" class="nav__close">
+                            <img src="./img/header/close.svg" alt="close">
+                        </a>
+                    </ul>
+                </nav>
+
+                <div class="header__burger">
+                    <a href="#" class="header__burger-link">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+
+                <div class="header__set set">
+                    <div class="set__lang dropbox">
+                        <a href="#" class="lang__item-head dropbox__header">
+                            <span>en</span>
+                            <svg class="icon">
+                                <use xlink:href="./img/icons.svg#arrow-header"></use>
+                            </svg>
+                        </a>
+
+                        <ul id="language" class="lang__item-body dropbox__body">
+                            <li class="dropbox__body-item">
+                                <a href="#" class="dropbox__body-link">English</a>
+                            </li>
+
+                            <li class="dropbox__body-item">
+                                <a href="#" class="dropbox__body-link">Spanish</a>
+                            </li>
+
+                            <li class="dropbox__body-item">
+                                <a href="#" class="dropbox__body-link">German</a>
+                            </li>
+
+                            <li class="dropbox__body-item">
+                                <a href="#" class="dropbox__body-link">Italian</a>
+                            </li>
+
+                            <li class="dropbox__body-item">
+                                <a href="#" class="dropbox__body-link">Swedish</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="set__buttons auth">
+                        <div class="auth__login">
+                            <a href="#" class="auth__link link">login</a>
+                        </div>
+
+                        <div class="auth__register">
+                            <a href="#" class="auth__link link">register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="main__wrapper">
+            <div class="container">
+                <div class="main__desc desc">
+                    <h1 class="desc__title desc__title-accounts"><span>Choose Your Path to </span><strong>Trading
+                            Success</strong></h1>
+
+                    <ul class="desc__options desc__options-accounts check-list">
+                        <li class="desc__item check-item">
+                            <div class="desc__icon check-icon">
+                                <img src="./img/main/icon check.svg" alt="icon">
+                            </div>
+
+                            <span>Flexible Account Options</span>
+                        </li>
+
+                        <li class="desc__item check-item">
+                            <div class="desc__icon check-icon">
+                                <img src="./img/main/icon check.svg" alt="icon">
+                            </div>
+
+                            <span>Competitive Spreads</span>
+                        </li>
+
+                        <li class="desc__item check-item">
+                            <div class="desc__icon check-icon">
+                                <img src="./img/main/icon check.svg" alt="icon">
+                            </div>
+
+                            <span>Advanced Trading Tools</span>
+                        </li>
+
+                        <li class="desc__item check-item">
+                            <div class="desc__icon check-icon">
+                                <img src="./img/main/icon check.svg" alt="icon">
+                            </div>
+
+                            <span>Dedicated Support</span>
+                        </li>
+                    </ul>
+
+                    <div class="desc__button register">
+                        <a href="#" class="button register__link">
+                            <span>Register now</span>
+
+                            <img src="./img/main/arrow-in.svg" alt="arrow">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="main__decor decor">
+                    <div class="decor__big decor__big-accounts">
+                        <img src="./img/main/bg-accounts.png" alt="big-arrows">
+                    </div>
+                </div>
+            </div>
+
+            <div class="main__wrapper-decor main__wrapper-decor--accounts"></div>
+        </div>
+    </main>
+
+    <section class="accounts">
+        <div class="accounts__wrapper">
+            <div class="container">
+                <ul id="accounts" class="accounts__wrap">
+                    <li class="accounts__item">
+                        <div class="accounts__head">
+                            <h3 class="accounts__head-title">Registration</h3>
+
+                            <div class="accounts__head-price">
+                                <span>USD 250</span>
+                                <span>min. deposit</span>
+                            </div>
+
+                            <div class="accounts__head-button">
+                                <a href="#" class="accounts__head-button--link">get started</a>
+                            </div>
+
+                            <div class="accounts__head-arrow">
+                                <a href="#" class="accounts__head-arrow--link">
+                                    <svg class="icon">
+                                        <use xlink:href="./img/icons.svg#arrow-header"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <ul class="accounts__check-list check-list">
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Mobile Trading</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Leverage (Currencies 1:200)</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Secure Ordering</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Basic training - Platform Introduction</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Responsive Support</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Educational Session with a Mentor</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Education Tools</span>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="accounts__item">
+                        <div class="accounts__head">
+                            <h3 class="accounts__head-title">Beginners</h3>
+
+                            <div class="accounts__head-price">
+                                <span>USD 2,500</span>
+                                <span>min. deposit</span>
+                            </div>
+
+                            <div class="accounts__head-button">
+                                <a href="#" class="accounts__head-button--link">get started</a>
+                            </div>
+
+                            <div class="accounts__head-arrow">
+                                <a href="#" class="accounts__head-arrow--link">
+                                    <svg class="icon">
+                                        <use xlink:href="./img/icons.svg#arrow-header"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <ul class="accounts__check-list check-list">
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Mobile Trading</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Leverage (Currencies 1:200)</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Secure Ordering</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Full Training - Advanced Platform Tools</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Responsive Support</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Dedicated Mentor</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Education Tools</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Basic Strategies Session</span>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="accounts__item">
+                        <div class="accounts__head">
+                            <h3 class="accounts__head-title">Intermediate</h3>
+
+                            <div class="accounts__head-price">
+                                <span>USD 20,000</span>
+                                <span>min. deposit</span>
+                            </div>
+
+                            <div class="accounts__head-button">
+                                <a href="#" class="accounts__head-button--link">get started</a>
+                            </div>
+
+                            <div class="accounts__head-arrow">
+                                <a href="#" class="accounts__head-arrow--link">
+                                    <svg class="icon">
+                                        <use xlink:href="./img/icons.svg#arrow-header"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <ul class="accounts__check-list check-list">
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Mobile Trading</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Leverage (Currencies 1:200)</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Islamic Account</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Secure Ordering</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Full Training - Advanced Platform Tools</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Commodities Special Training</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Responsive Support</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Dedicated Mentor</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Education Tools</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Advanced Strategies Session</span>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="accounts__item">
+                        <div class="accounts__head">
+                            <h3 class="accounts__head-title">Advanced</h3>
+
+                            <div class="accounts__head-price">
+                                <span>USD 50,000</span>
+                                <span>min. deposit</span>
+                            </div>
+
+                            <div class="accounts__head-button">
+                                <a href="#" class="accounts__head-button--link">get started</a>
+                            </div>
+
+                            <div class="accounts__head-arrow">
+                                <a href="#" class="accounts__head-arrow--link">
+                                    <svg class="icon">
+                                        <use xlink:href="./img/icons.svg#arrow-header"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <ul class="accounts__check-list check-list">
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Mobile Trading</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Full Training - Advanced Platform Tools</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Currencies Special Training</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Secure Ordering</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Dedicated Mentor</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Basic Market Events</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Responsive Support</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Advanced Strategies Session</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Indices Special Training</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Education Tools</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Islamic Account</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Leverage (Currencies 1:200)</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Commodities Special Training</span>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="accounts__item">
+                        <div class="accounts__head">
+                            <h3 class="accounts__head-title">Professional</h3>
+
+                            <div class="accounts__head-price">
+                                <span>USD 100,000</span>
+                                <span>min. deposit</span>
+                            </div>
+
+                            <div class="accounts__head-button">
+                                <a href="#" class="accounts__head-button--link">get started</a>
+                            </div>
+
+                            <div class="accounts__head-arrow">
+                                <a href="#" class="accounts__head-arrow--link">
+                                    <svg class="icon">
+                                        <use xlink:href="./img/icons.svg#arrow-header"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <ul class="accounts__check-list check-list">
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Mobile Trading</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Full Training - Advanced Platform Tools</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Currencies Special Training</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Secure Ordering</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Dedicated Mentor</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Extra Market Events</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Responsive Support</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Advanced Strategies Session</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Indices Special Training</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Education Tools</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Islamic Account</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Private Strategy</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Leverage (Currencies 1:200)</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Commodities Special Training</span>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="accounts__item">
+                        <div class="accounts__head">
+                            <h3 class="accounts__head-title">Premium</h3>
+
+                            <div class="accounts__head-price">
+                                <span>USD 500,000</span>
+                                <span>min. deposit</span>
+                            </div>
+
+                            <div class="accounts__head-button">
+                                <a href="#" class="accounts__head-button--link">get started</a>
+                            </div>
+
+                            <div class="accounts__head-arrow">
+                                <a href="#" class="accounts__head-arrow--link">
+                                    <svg class="icon">
+                                        <use xlink:href="./img/icons.svg#arrow-header"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <ul class="accounts__check-list check-list">
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Mobile Trading</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Full Training - Advanced Platform Tools</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Currencies Special Training</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Secure Ordering</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Dedicated Mentor</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Premium Market Events</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Responsive Support</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Advanced Strategies Session</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Indices Special Training</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Education Tools</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Islamic Account</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Private Strategy</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Leverage (Currencies 1:200)</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Commodities Special Training</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Stocks Special Training</span>
+                            </li>
+
+                            <li class="accounts__check-item check-item">
+                                <div class="accounts__check-icon check-icon">
+                                    <img src="./img/main/icon check.svg" alt="icon">
+                                </div>
+
+                                <span>Crypto Special Training</span>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="start">
+        <div class="container">
+            <div class="start__wrapper start__wrapper-accounts">
+                <div class="start__text">
+                    <div class="title start__title start__title-accounts">
+                        <strong>VIP Exclusive</strong>
+                        <span>USD 1,000,000</span>
+                        <span>min. deposit</span>
+                    </div>
+
+                    <div class="start__desc start__desc-accounts">Please speak to your private mentor for further
+                        information.
+                    </div>
+                </div>
+
+                <div class="start__button">
+                    <a href="#" class="button start__link">
+                        <span>Open account</span>
+
+                        <img src="./img/main/arrow-in.svg" alt="arrow">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__info info">
+                    <div class="footer__logo logo">
+                        <a href="#" class="logo__link">
+                            <img src="" alt="logo" class="logo__img">
+                        </a>
+                    </div>
+
+                    <p class="info__desc">Suite 305, Griffith Corporate Centre, Beachmont, Kingstown, Saint Vincent and
+                        Grenadines</p>
+
+                    <ul class="info__icons">
+                        <li class="info__item">
+                            <a href="#" class="info__link">
+                                <img src="./img/footer/bank-transfer.svg" alt="bank-transfer">
+                            </a>
+                        </li>
+
+                        <li class="info__item">
+                            <a href="#" class="info__link">
+                                <img src="./img/footer/visa.svg" alt="visa">
+                            </a>
+                        </li>
+
+                        <li class="info__item">
+                            <a href="#" class="info__link">
+                                <img src="./img/footer/mastercard.svg" alt="master-card">
+                            </a>
+                        </li>
+
+                        <li class="info__item">
+                            <a href="#" class="info__link">
+                                <img src="./img/footer/bitcoin.svg" alt="bitcoin">
+                            </a>
+                        </li>
+
+                        <li class="info__item">
+                            <a href="#" class="info__link">
+                                <img src="./img/footer/ethereum-classic.svg" alt="ethereum-classic">
+                            </a>
+                        </li>
+
+                        <li class="info__item">
+                            <a href="#" class="info__link">
+                                <img src="./img/footer/litecoin.svg" alt="litecoin">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__pages pages">
+                    <ul class="pages__list list">
+                        <span class="list-title">Pages</span>
+
+                        <li class="pages__item item">
+                            <a href="#" class="pages__link item-link">Trading</a>
+                        </li>
+
+                        <li class="pages__item item">
+                            <a href="#" class="pages__link item-link">Calendar</a>
+                        </li>
+
+                        <li class="pages__item item">
+                            <a href="#" class="pages__link item-link">About Us</a>
+                        </li>
+
+                        <li class="pages__item item">
+                            <a href="#" class="pages__link item-link">Partnership</a>
+                        </li>
+
+                        <li class="pages__item item">
+                            <a href="#" class="pages__link item-link">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__documents documents">
+                    <ul class="documents__list list">
+                        <span class="list-title">Documents</span>
+
+                        <li class="documents__item item">
+                            <a href="#" class="documents__link item-link">Privacy Policy</a>
+                        </li>
+
+                        <li class="documents__item item">
+                            <a href="#" class="documents__link item-link">AML Policy</a>
+                        </li>
+
+                        <li class="documents__item item">
+                            <a href="#" class="documents__link item-link">Risc Disciosure</a>
+                        </li>
+
+                        <li class="documents__item item">
+                            <a href="#" class="documents__link item-link">User Agreement</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__contacts contacts">
+                    <ul class="contacts__list list">
+                        <span class="list-title">Contacts</span>
+
+                        <li class="contacts__item item">
+                            <a href="tel:7777777777" class="contacts__link item-link">+7 77777777777</a>
+                        </li>
+
+                        <li class="contacts__item item">
+                            <a href="mailto:support@gmail.com" class="contacts__link item-link">support@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__rights rights">
+                <h6 class="rights__title">© 2022 companyname.com All rights reserved</h6>
+
+                <p class="rights__desc">Risk Warning : Trading foreign exchange on margin carries a high level of risk,
+                    and may not be suitable for all investors. Please ensure that you fully understand the risks
+                    involved, taking into account your investments objectives and level of experience, before trading,
+                    and if necessary, seek independent advice.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
