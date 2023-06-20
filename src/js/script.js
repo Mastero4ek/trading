@@ -27,13 +27,17 @@ accountsItem.forEach((item, i) => {
         if (!item.classList.contains('active')) {
             accountsItem[i].classList.add('active')
             accountsList[i].classList.add('accounts__check-list--show')
-            accountsHead[i].style.overflow = 'visible'
 
             const h = getComputedStyle(accountsList[i]).height
 
             accountsList[i].style.height = '0'
             getComputedStyle(accountsList[i]).height
             accountsList[i].style.height = h
+
+            setTimeout(() => {
+                accountsList[i].style.height = ''
+                accountsHead[i].style.overflow = 'visible'
+            }, 360);
         } else {
             accountsList[i].style.height = getComputedStyle(accountsList[i]).height
             getComputedStyle(accountsList[i]).height
