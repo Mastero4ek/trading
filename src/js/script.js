@@ -48,3 +48,47 @@ accountsItem.forEach((item, i) => {
         }
     })
 })
+
+//table
+
+// const tableBtn = document.querySelectorAll('.deposits__table-link > a'),
+//     tableRow = document.querySelectorAll('.deposits__table-body > tr');
+
+// tableBtn.forEach((btn, i) => {
+//     btn.addEventListener('mouseenter', (e) => {
+//         const tableTd = tableRow[i].querySelectorAll('td');
+
+//         tableTd.forEach((item) => {
+//             item.style.backgroundColor = '#FE7E47'
+//             item.style.color = '#FFFFFF'
+//         })
+//         // tableRow[i].style.backgroundColor = '#FE7E47'
+//         // tableRow[i].style.color = '#FFFFFF'
+//     })
+
+//     btn.addEventListener('mouseleave', (e) => {
+//         const tableTd = tableRow[i].querySelectorAll('td');
+
+//         tableTd.forEach((item) => {
+//             item.style.backgroundColor = ''
+//             item.style.color = ''
+//         })
+//         // tableRow[i].style.backgroundColor = ''
+//         // tableRow[i].style.color = ''
+//     })
+// })
+
+const tableBtn = document.querySelectorAll('.table-link > a'),
+    tableRow = document.querySelectorAll('.table-item');
+
+tableBtn.forEach((btn, i) => {
+    btn.addEventListener('mouseenter', (e) => {
+        tableRow[i].style.backgroundColor = '#FE7E47'
+        tableRow[i].style.color = '#FFFFFF'
+    })
+
+    btn.addEventListener('mouseleave', (e) => {
+        tableRow[i].style.backgroundColor = ''
+        tableRow[i].style.color = ''
+    })
+})

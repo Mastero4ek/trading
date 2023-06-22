@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script defer src="js/script.js"></script>
+
+    <title></title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="container">
+                <div class="header__logo logo">
+                    <a href="./index.html" class="logo__link">
+                        <img src="" alt="logo" class="logo__img">
+                    </a>
+                </div>
+
+                <nav class="header__nav nav">
+                    <ul class="nav__wrapper">
+                        <li class="nav__item">
+                            <a href="./index.html" class="nav__item-head">home</a>
+                        </li>
+
+                        <li class="nav__item dropbox dropbox--side">
+                            <a href="#" class="nav__item-head dropbox__header">
+                                <span>trading</span>
+                                <svg class="icon">
+                                    <use xlink:href="./img/icons.svg#arrow-header"></use>
+                                </svg>
+                            </a>
+
+                            <ul id="trading" class="nav__item-body dropbox__body dropbox__body--side">
+                                <li class="dropbox__body-item">
+                                    <a href="./markets.html" class="dropbox__body-link">Markets</a>
+                                </li>
+
+                                <li class="dropbox__body-item">
+                                    <a href="./accounts.html" class="dropbox__body-link">Accounts</a>
+                                </li>
+
+                                <li class="dropbox__body-item">
+                                    <a href="./deposits.html" class="dropbox__body-link">Deposits</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav__item dropbox dropbox--side">
+                            <a href="#" class="nav__item-head dropbox__header">
+                                <span>company</span>
+                                <svg class="icon">
+                                    <use xlink:href="./img/icons.svg#arrow-header"></use>
+                                </svg>
+                            </a>
+
+                            <ul id="company" class="nav__item-body dropbox__body dropbox__body--side">
+                                <li class="dropbox__body-item">
+                                    <a href="#" class="dropbox__body-link">About</a>
+                                </li>
+
+                                <li class="dropbox__body-item">
+                                    <a href="#" class="dropbox__body-link">Us Careers</a>
+                                </li>
+
+                                <li class="dropbox__body-item">
+                                    <a href="#" class="dropbox__body-link">Contact Us</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav__item dropbox dropbox--side">
+                            <a href="#" class="nav__item-head dropbox__header">
+                                <span>learn</span>
+                                <svg class="icon">
+                                    <use xlink:href="./img/icons.svg#arrow-header"></use>
+                                </svg>
+                            </a>
+
+                            <ul id="learn" class="nav__item-body dropbox__body dropbox__body--side">
+                                <li class="dropbox__body-item">
+                                    <a href="#" class="dropbox__body-link">Trading Hours</a>
+                                </li>
+
+                                <li class="dropbox__body-item">
+                                    <a href="#" class="dropbox__body-link">Economic Calendar</a>
+                                </li>
+
+                                <li class="dropbox__body-item">
+                                    <a href="#" class="dropbox__body-link">Trading FAQ</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav__item lang">
+                            <ul class="lang__list">
+                                <li class="lang__item">
+                                    <a href="#" class="lang__link">En</a>
+                                </li>
+
+                                <li class="lang__item">
+                                    <a href="#" class="lang__link">Es</a>
+                                </li>
+
+                                <li class="lang__item">
+                                    <a href="#" class="lang__link">De</a>
+                                </li>
+
+                                <li class="lang__item">
+                                    <a href="#" class="lang__link">It</a>
+                                </li>
+
+                                <li class="lang__item">
+                                    <a href="#" class="lang__link">Sv</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- <div class="nav__item lang">
+							<li class="lang__item-head ">
+								<a href="#" class="lang__link">En</a>
+
+								<ul class="lang__item-body">
+									<li class="lang__item">
+										<a href="#" class="lang__link">Es</a>
+									</li>
+
+									<li class="lang__item">
+										<a href="#" class="lang__link">De</a>
+									</li>
+
+									<li class="lang__item">
+										<a href="#" class="lang__link">It</a>
+									</li>
+
+									<li class="lang__item">
+										<a href="#" class="lang__link">Sv</a>
+									</li>
+								</ul>
+							</li>
+						</div> -->
+
+                        <a href="#" class="nav__close">
+                            <img src="./img/header/close.svg" alt="close">
+                        </a>
+                    </ul>
+                </nav>
+
+                <div class="header__burger">
+                    <a href="#" class="header__burger-link">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+
+                <div class="header__set set">
+                    <div class="set__lang dropbox">
+                        <a href="#" class="lang__item-head dropbox__header">
+                            <span>en</span>
+                            <svg class="icon">
+                                <use xlink:href="./img/icons.svg#arrow-header"></use>
+                            </svg>
+                        </a>
+
+                        <ul id="language" class="lang__item-body dropbox__body">
+                            <li class="dropbox__body-item">
+                                <a href="#" class="dropbox__body-link">English</a>
+                            </li>
+
+                            <li class="dropbox__body-item">
+                                <a href="#" class="dropbox__body-link">Spanish</a>
+                            </li>
+
+                            <li class="dropbox__body-item">
+                                <a href="#" class="dropbox__body-link">German</a>
+                            </li>
+
+                            <li class="dropbox__body-item">
+                                <a href="#" class="dropbox__body-link">Italian</a>
+                            </li>
+
+                            <li class="dropbox__body-item">
+                                <a href="#" class="dropbox__body-link">Swedish</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="set__buttons auth">
+                        <div class="auth__login">
+                            <a href="#" class="auth__link link">login</a>
+                        </div>
+
+                        <div class="auth__register">
+                            <a href="#" class="auth__link link">register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="main__wrapper main__wrapper-deposits">
+            <div class="container">
+                <div class="main__desc desc">
+                    <h1 class="desc__title desc__title-deposits"><span>0% Commission</span><strong>for Depositing and
+                            Withdrawing</strong></h1>
+
+                    <ul class="desc__options desc__options-deposits check-list">
+                        <li class="desc__item check-item">
+                            <div class="desc__icon check-icon">
+                                <img src="./img/main/icon check.svg" alt="icon">
+                            </div>
+
+                            <span>No hidden charges</span>
+                        </li>
+
+                        <li class="desc__item check-item">
+                            <div class="desc__icon check-icon">
+                                <img src="./img/main/icon check.svg" alt="icon">
+                            </div>
+
+                            <span>Negative balance protection</span>
+                        </li>
+
+                        <li class="desc__item check-item">
+                            <div class="desc__icon check-icon">
+                                <img src="./img/main/icon check.svg" alt="icon">
+                            </div>
+
+                            <span>Seamless transfers</span>
+                        </li>
+
+                        <li class="desc__item check-item">
+                            <div class="desc__icon check-icon">
+                                <img src="./img/main/icon check.svg" alt="icon">
+                            </div>
+
+                            <span>Perfect rates</span>
+                        </li>
+                    </ul>
+
+                    <div class="desc__button desc__button-deposits register">
+                        <a href="#" class="button register__link">
+                            <span>Register now</span>
+
+                            <img src="./img/main/arrow-in.svg" alt="arrow">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="main__decor decor">
+                    <div class="decor__big decor__big-deposits">
+                        <img src="./img/deposits/bg-deposits.png" alt="bg-deposits">
+                    </div>
+                </div>
+            </div>
+
+            <div class="main__wrapper-decor main__wrapper-decor--deposits"></div>
+        </div>
+    </main>
+
+    <section class="deposits">
+        <div class="deposits__wrapper">
+            <div class="container">
+                <h2 class="title deposits__title">Deposit</h2>
+
+                <!-- <table class="table deposits__table">
+                    <thead class="table-head deposits__table-head">
+                        <tr>
+                            <th>Account type</th>
+                            <th>Supported Currencies</th>
+                            <th>Fees / Commissions</th>
+                            <th>Processing Time</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+
+                    <tbody class="table-body deposits__table-body">
+                        <tr>
+                            <td class="table-icon deposits__table-icon">
+                                <img src="./img/deposits/neteller.svg" alt="neteller">
+                            </td>
+                            <td class="table-currency deposits__table-currency">USD</td>
+                            <td class="table-fees deposits__table-fees">No Fees Charged</td>
+                            <td class="table-time deposits__table-time">Instant</td>
+                            <td class="table-link deposits__table-link">
+                                <a class="button-mini" href="#">Deposit</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="table-icon deposits__table-icon">
+                                <img src="./img/deposits/scrill.svg" alt="scrill">
+                            </td>
+                            <td class="table-currency deposits__table-currency">USD</td>
+                            <td class="table-fees deposits__table-fees">No Fees Charged</td>
+                            <td class="table-time deposits__table-time">Instant</td>
+                            <td class="table-link deposits__table-link">
+                                <a class="button-mini" href="#">Deposit</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="table-icon deposits__table-icon">
+                                <img src="./img/deposits/visa.svg" alt="visa">
+                            </td>
+                            <td class="table-currency deposits__table-currency">USD</td>
+                            <td class="table-fees deposits__table-fees">No Fees Charged</td>
+                            <td class="table-time deposits__table-time">Instant</td>
+                            <td class="table-link deposits__table-link">
+                                <a class="button-mini" href="#">Deposit</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="table-icon deposits__table-icon">
+                                <img src="./img/deposits/ewire.svg" alt="ewire">
+                            </td>
+                            <td class="table-currency deposits__table-currency">USD, AED, EUR</td>
+                            <td class="table-fees deposits__table-fees">No Fees Charged</td>
+                            <td class="table-time deposits__table-time">2 to 5 working days</td>
+                            <td class="table-link deposits__table-link">
+                                <a class="button-mini" href="#">Deposit</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="table-icon deposits__table-icon">
+                                <img src="./img/deposits/bitpay.svg" alt="bitpay">
+                            </td>
+                            <td class="table-currency deposits__table-currency">USD</td>
+                            <td class="table-fees deposits__table-fees">No Fees Charged</td>
+                            <td class="table-time deposits__table-time">Instant</td>
+                            <td class="table-link deposits__table-link">
+                                <a class="button-mini" href="#">Deposit</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="table-icon deposits__table-icon">
+                                <img src="./img/deposits/cripto.svg" alt="cripto">
+                            </td>
+                            <td class="table-currency deposits__table-currency">USD</td>
+                            <td class="table-fees deposits__table-fees">No Fees Charged</td>
+                            <td class="table-time deposits__table-time">Instant</td>
+                            <td class="table-link deposits__table-link">
+                                <a class="button-mini" href="#">Deposit</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="table-icon deposits__table-icon">
+                                <img src="./img/deposits/perfect.svg" alt="perfect">
+                            </td>
+                            <td class="table-currency deposits__table-currency">USD</td>
+                            <td class="table-fees deposits__table-fees">No Fees Charged</td>
+                            <td class="table-time deposits__table-time">Instant</td>
+                            <td class="table-link deposits__table-link">
+                                <a class="button-mini" href="#">Deposit</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table> -->
+
+                <div class="table deposits__table">
+                    <div class="table-head deposits__table-head">
+                        <span class="table-th">Account type</span>
+                        <span class="table-th">Supported Currencies</span>
+                        <span class="table-th">Fees / Commissions</span>
+                        <span class="table-th">Processing Time</span>
+                        <span class="table-th"></span>
+                    </div>
+
+                    <ul class="table-body deposits__table-body">
+                        <li class="table-item deposits__table-item">
+                            <div class="table-icon table-td deposits__table-icon">
+                                <img src="./img/deposits/neteller.svg" alt="neteller">
+                            </div>
+
+                            <span class="table-td">USD</span>
+                            <span class="table-td">No Fees Charged</span>
+                            <span class="table-td">Instant</span>
+
+                            <div class="table-link table-td deposits__table-link">
+                                <a href="#" class="button-mini">deposit</a>
+                            </div>
+                        </li>
+
+                        <li class="table-item deposits__table-item">
+                            <div class="table-icon table-td deposits__table-icon">
+                                <img src="./img/deposits/scrill.svg" alt="scrill">
+                            </div>
+
+                            <span class="table-td">USD</span>
+                            <span class="table-td">No Fees Charged</span>
+                            <span class="table-td">Instant</span>
+
+                            <div class="table-link table-td deposits__table-link">
+                                <a href="#" class="button-mini">deposit</a>
+                            </div>
+                        </li>
+
+                        <li class="table-item deposits__table-item">
+                            <div class="table-icon table-td deposits__table-icon">
+                                <img src="./img/deposits/visa.svg" alt="visa">
+                            </div>
+
+                            <span class="table-td">USD</span>
+                            <span class="table-td">No Fees Charged</span>
+                            <span class="table-td">Instant</span>
+
+                            <div class="table-link table-td deposits__table-link">
+                                <a href="#" class="button-mini">deposit</a>
+                            </div>
+                        </li>
+
+                        <li class="table-item deposits__table-item">
+                            <div class="table-icon table-td deposits__table-icon">
+                                <img src="./img/deposits/ewire.svg" alt="ewire">
+                            </div>
+
+                            <span class="table-td">USD, AED, EUR</span>
+                            <span class="table-td">No Fees Charged</span>
+                            <span class="table-td">2 to 5 working days</span>
+
+                            <div class="table-link table-td deposits__table-link">
+                                <a href="#" class="button-mini">deposit</a>
+                            </div>
+                        </li>
+
+                        <li class="table-item deposits__table-item">
+                            <div class="table-icon table-td deposits__table-icon">
+                                <img src="./img/deposits/bitpay.svg" alt="bitpay">
+                            </div>
+
+                            <span class="table-td">USD</span>
+                            <span class="table-td">No Fees Charged</span>
+                            <span class="table-td">Instant</span>
+
+                            <div class="table-link table-td deposits__table-link">
+                                <a href="#" class="button-mini">deposit</a>
+                            </div>
+                        </li>
+
+                        <li class="table-item deposits__table-item">
+                            <div class="table-icon table-td deposits__table-icon">
+                                <img src="./img/deposits/cripto.svg" alt="cripto">
+                            </div>
+
+                            <span class="table-td">USD</span>
+                            <span class="table-td">No Fees Charged</span>
+                            <span class="table-td">Instant</span>
+
+                            <div class="table-link table-td deposits__table-link">
+                                <a href="#" class="button-mini">deposit</a>
+                            </div>
+                        </li>
+
+                        <li class="table-item deposits__table-item">
+                            <div class="table-icon table-td deposits__table-icon">
+                                <img src="./img/deposits/perfect.svg" alt="perfect">
+                            </div>
+
+                            <span class="table-td">USD</span>
+                            <span class="table-td">No Fees Charged</span>
+                            <span class="table-td ">Instant</span>
+
+                            <div class="table-link table-td deposits__table-link">
+                                <a href="#" class="button-mini">deposit</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="withdrawals">
+        <div class="withdrawals__wrapper">
+            <div class="container">
+                <h2 class="title withdrawals__title">Withdrawals</h2>
+
+                <div class="table withdrawals__table">
+                    <div class="table-head withdrawals__table-head">
+                        <span class="table-th">Account type</span>
+                        <span class="table-th">Supported Currencies</span>
+                        <span class="table-th">Fees / Commissions</span>
+                        <span class="table-th">Processing Time</span>
+                        <span class="table-th"></span>
+                    </div>
+
+                    <ul class="table-body withdrawals__table-body">
+                        <li class="table-item withdrawals__table-item">
+                            <div class="table-icon table-td withdrawals__table-icon">
+                                <img src="./img/deposits/ewire.svg" alt="ewire">
+                            </div>
+
+                            <span class="table-td">USD</span>
+                            <span class="table-td">Remitting bank charges only</span>
+                            <span class="table-td">2 to 5 working days</span>
+
+                            <div class="table-link table-td withdrawals__table-link">
+                                <a href="#" class="button-mini">withdrawals</a>
+                            </div>
+                        </li>
+
+                        <li class="table-item withdrawals__table-item">
+                            <div class="table-icon table-td withdrawals__table-icon">
+                                <img src="./img/deposits/neteller.svg" alt="neteller">
+                            </div>
+
+                            <span class="table-td">USD</span>
+                            <span class="table-td">Remitting neteller charges only</span>
+                            <span class="table-td">Same day</span>
+
+                            <div class="table-link table-td withdrawals__table-link">
+                                <a href="#" class="button-mini">withdrawals</a>
+                            </div>
+                        </li>
+
+                        <li class="table-item withdrawals__table-item">
+                            <div class="table-icon table-td withdrawals__table-icon">
+                                <img src="./img/deposits/scrill.svg" alt="scrill">
+                            </div>
+
+                            <span class="table-td">USD</span>
+                            <span class="table-td">Remitting skrill charges only</span>
+                            <span class="table-td">Same day</span>
+
+                            <div class="table-link table-td withdrawals__table-link">
+                                <a href="#" class="button-mini">withdrawals</a>
+                            </div>
+                        </li>
+
+                        <li class="table-item withdrawals__table-item">
+                            <div class="table-icon table-td withdrawals__table-icon">
+                                <img src="./img/deposits/cripto.svg" alt="cripto">
+                            </div>
+
+                            <span class="table-td">USD</span>
+                            <span class="table-td">Remitting blockchain charges only</span>
+                            <span class="table-td">Same day</span>
+
+                            <div class="table-link table-td withdrawals__table-link">
+                                <a href="#" class="button-mini">withdrawals</a>
+                            </div>
+                        </li>
+
+                        <li class="table-item withdrawals__table-item">
+                            <div class="table-icon table-td withdrawals__table-icon">
+                                <img src="./img/deposits/perfect.svg" alt="perfect">
+                            </div>
+
+                            <span class="table-td">USD</span>
+                            <span class="table-td">Remitting perfect money charges only</span>
+                            <span class="table-td">Same day</span>
+
+                            <div class="table-link table-td withdrawals__table-link">
+                                <a href="#" class="button-mini">withdrawals</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="funds">
+        <div class="funds__wrapper">
+            <div class="container">
+                <div class="funds__top">
+                    <h4 class="title funds__title">Funds Security</h4>
+
+                    <div class="funds__desc">We understand the importance of providing a safe and trusted environment
+                        for our clients. Here's why you can trust us with the security of your investments</div>
+                </div>
+
+                <div class="funds__bottom">
+                    <ul class="funds__options">
+                        <li class="funds__card">
+                            <div class="funds__card-img">
+                                <img src="./img/offer/check.svg" alt="icon">
+                            </div>
+
+                            <div class="funds__card-title">Stringent regulatory compliance</div>
+                        </li>
+
+                        <li class="funds__card">
+                            <div class="funds__card-img">
+                                <img src="./img/offer/check.svg" alt="icon">
+                            </div>
+
+                            <div class="funds__card-title">Segregated accounts</div>
+                        </li>
+
+                        <li class="funds__card">
+                            <div class="funds__card-img">
+                                <img src="./img/offer/check.svg" alt="icon">
+                            </div>
+
+                            <div class="funds__card-title">SSL-protected personal area</div>
+                        </li>
+
+                        <li class="funds__card">
+                            <div class="funds__card-img">
+                                <img src="./img/offer/check.svg" alt="icon">
+                            </div>
+
+                            <div class="funds__card-title">Account verification</div>
+                        </li>
+
+                        <li class="funds__card">
+                            <div class="funds__card-img">
+                                <img src="./img/offer/check.svg" alt="icon">
+                            </div>
+
+                            <div class="funds__card-title">Advanced encryption technology</div>
+                        </li>
+
+                        <li class="funds__card">
+                            <div class="funds__card-img">
+                                <img src="./img/offer/check.svg" alt="icon">
+                            </div>
+
+                            <div class="funds__card-title">Regular audits and monitoring</div>
+                        </li>
+                    </ul>
+
+                    <div class="funds__right">
+                        <div class="funds__img">
+                            <div class="funds__img-big"></div>
+
+                            <div class="funds__img-small"></div>
+
+                            <div class="funds__button">
+                                <a href="#" class="funds__link">
+                                    <span>Start trading</span>
+
+                                    <svg class="icon">
+                                        <use xlink:href="./img/icons.svg#arrow"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="start">
+        <div class="container">
+            <div class="start__wrapper">
+                <div class="start__text">
+                    <h5 class="title start__title">Ready to get started?</h5>
+
+                    <div class="start__desc">Open an account in just a few steps and gain access to all asset classes
+                    </div>
+                </div>
+
+                <div class="start__button">
+                    <a href="#" class="button start__link">
+                        <span>Open account</span>
+
+                        <img src="./img/main/arrow-in.svg" alt="arrow">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__info info">
+                    <div class="footer__logo logo">
+                        <a href="#" class="logo__link">
+                            <img src="" alt="logo" class="logo__img">
+                        </a>
+                    </div>
+
+                    <p class="info__desc">Suite 305, Griffith Corporate Centre, Beachmont, Kingstown, Saint Vincent and
+                        Grenadines</p>
+
+                    <ul class="info__icons">
+                        <li class="info__item">
+                            <a href="#" class="info__link">
+                                <img src="./img/footer/bank-transfer.svg" alt="bank-transfer">
+                            </a>
+                        </li>
+
+                        <li class="info__item">
+                            <a href="#" class="info__link">
+                                <img src="./img/footer/visa.svg" alt="visa">
+                            </a>
+                        </li>
+
+                        <li class="info__item">
+                            <a href="#" class="info__link">
+                                <img src="./img/footer/mastercard.svg" alt="master-card">
+                            </a>
+                        </li>
+
+                        <li class="info__item">
+                            <a href="#" class="info__link">
+                                <img src="./img/footer/bitcoin.svg" alt="bitcoin">
+                            </a>
+                        </li>
+
+                        <li class="info__item">
+                            <a href="#" class="info__link">
+                                <img src="./img/footer/ethereum-classic.svg" alt="ethereum-classic">
+                            </a>
+                        </li>
+
+                        <li class="info__item">
+                            <a href="#" class="info__link">
+                                <img src="./img/footer/litecoin.svg" alt="litecoin">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__pages pages">
+                    <ul class="pages__list list">
+                        <span class="list-title">Pages</span>
+
+                        <li class="pages__item item">
+                            <a href="#" class="pages__link item-link">Trading</a>
+                        </li>
+
+                        <li class="pages__item item">
+                            <a href="#" class="pages__link item-link">Calendar</a>
+                        </li>
+
+                        <li class="pages__item item">
+                            <a href="#" class="pages__link item-link">About Us</a>
+                        </li>
+
+                        <li class="pages__item item">
+                            <a href="#" class="pages__link item-link">Partnership</a>
+                        </li>
+
+                        <li class="pages__item item">
+                            <a href="#" class="pages__link item-link">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__documents documents">
+                    <ul class="documents__list list">
+                        <span class="list-title">Documents</span>
+
+                        <li class="documents__item item">
+                            <a href="#" class="documents__link item-link">Privacy Policy</a>
+                        </li>
+
+                        <li class="documents__item item">
+                            <a href="#" class="documents__link item-link">AML Policy</a>
+                        </li>
+
+                        <li class="documents__item item">
+                            <a href="#" class="documents__link item-link">Risc Disciosure</a>
+                        </li>
+
+                        <li class="documents__item item">
+                            <a href="#" class="documents__link item-link">User Agreement</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__contacts contacts">
+                    <ul class="contacts__list list">
+                        <span class="list-title">Contacts</span>
+
+                        <li class="contacts__item item">
+                            <a href="tel:7777777777" class="contacts__link item-link">+7 77777777777</a>
+                        </li>
+
+                        <li class="contacts__item item">
+                            <a href="mailto:support@gmail.com" class="contacts__link item-link">support@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__rights rights">
+                <h6 class="rights__title">© 2022 companyname.com All rights reserved</h6>
+
+                <p class="rights__desc">Risk Warning : Trading foreign exchange on margin carries a high level of risk,
+                    and may not be suitable for all investors. Please ensure that you fully understand the risks
+                    involved, taking into account your investments objectives and level of experience, before trading,
+                    and if necessary, seek independent advice.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
