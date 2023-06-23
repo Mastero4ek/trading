@@ -78,17 +78,17 @@ accountsItem.forEach((item, i) => {
 //     })
 // })
 
-const tableBtn = document.querySelectorAll('.table-link > a'),
-    tableRow = document.querySelectorAll('.table-item');
+// const tableBtn = document.querySelectorAll('.table-link > a'),
+//     tableRow = document.querySelectorAll('.table-item');
 
-tableBtn.forEach((btn, i) => {
-    btn.addEventListener('mouseenter', (e) => {
-        tableRow[i].style.backgroundColor = '#FE7E47'
-        tableRow[i].style.color = '#FFFFFF'
-    })
+// tableBtn.forEach((btn, i) => {
+//     btn.addEventListener('mouseenter', (e) => {
+//         tableRow[i].style.backgroundColor = '#FE7E47'
+//         tableRow[i].style.color = '#FFFFFF'
+//     })
 
-    btn.addEventListener('mouseleave', (e) => {
-        tableRow[i].style.backgroundColor = ''
-        tableRow[i].style.color = ''
-    })
-})
+//     btn.addEventListener('mouseleave', (e) => {
+//         tableRow[i].style.backgroundColor = ''
+//         tableRow[i].style.color = ''
+//     })
+// })
