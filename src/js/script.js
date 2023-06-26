@@ -20,111 +20,113 @@ const accounts = document.getElementById('accounts'),
     accountsItem = document.querySelectorAll('.accounts__head-arrow--link'),
     accountsList = document.querySelectorAll('.accounts__check-list');
 
-accounts.addEventListener('click', (e) => {
-    if (e.target.matches('.accounts__head-arrow--link')) {
-        const btn = e.target.closest('.accounts__head-arrow--link');
+if (accounts !== null) {
+    accounts.addEventListener('click', (e) => {
+        if (e.target.matches('.accounts__head-arrow--link')) {
+            const btn = e.target.closest('.accounts__head-arrow--link');
 
-        accountsItem.forEach((item, i) => {
-            e.preventDefault()
+            accountsItem.forEach((item, i) => {
+                e.preventDefault()
 
-            if (btn === item) {
-                if (!item.classList.contains('active-acc')) {
-                    accountsHeader[i].classList.toggle('active')
-                    accountsItem[i].classList.toggle('active-acc')
-                    accountsHead[i].classList.toggle('active')
-                    accountsList[i].classList.add('accounts__check-list--show')
+                if (btn === item) {
+                    if (!item.classList.contains('active-acc')) {
+                        accountsHeader[i].classList.toggle('active')
+                        accountsItem[i].classList.toggle('active-acc')
+                        accountsHead[i].classList.toggle('active')
+                        accountsList[i].classList.add('accounts__check-list--show')
 
-                    const h = getComputedStyle(accountsList[i]).height
+                        const h = getComputedStyle(accountsList[i]).height
 
-                    accountsList[i].style.height = '0'
-                    getComputedStyle(accountsList[i]).height
-                    accountsList[i].style.height = h
+                        accountsList[i].style.height = '0'
+                        getComputedStyle(accountsList[i]).height
+                        accountsList[i].style.height = h
 
-                    setTimeout(() => {
+                        setTimeout(() => {
+                            accountsList[i].style.height = ''
+                            accountsHead[i].style.overflow = 'visible'
+                        }, 360);
+                    } else {
+                        accountsList[i].style.height = getComputedStyle(accountsList[i]).height
+                        getComputedStyle(accountsList[i]).height
                         accountsList[i].style.height = ''
-                        accountsHead[i].style.overflow = 'visible'
-                    }, 360);
-                } else {
-                    accountsList[i].style.height = getComputedStyle(accountsList[i]).height
-                    getComputedStyle(accountsList[i]).height
-                    accountsList[i].style.height = ''
-                    accountsHead[i].style.overflow = 'hidden'
-                    accountsHeader[i].classList.toggle('active')
-                    accountsItem[i].classList.toggle('active-acc')
-                    accountsHead[i].classList.toggle('active')
-                    accountsList[i].classList.remove('accounts__check-list--show')
+                        accountsHead[i].style.overflow = 'hidden'
+                        accountsHeader[i].classList.toggle('active')
+                        accountsItem[i].classList.toggle('active-acc')
+                        accountsHead[i].classList.toggle('active')
+                        accountsList[i].classList.remove('accounts__check-list--show')
+                    }
                 }
-            }
-        })
-    } else if (e.target.matches('.accounts__head-pointer')) {
-        const btn = e.target.closest('.accounts__head-pointer');
+            })
+        } else if (e.target.matches('.accounts__head-pointer')) {
+            const btn = e.target.closest('.accounts__head-pointer');
 
-        accountsHead.forEach((item, i) => {
-            e.preventDefault()
+            accountsHead.forEach((item, i) => {
+                e.preventDefault()
 
-            if (btn === item) {
-                if (!item.classList.contains('active')) {
-                    accountsHeader[i].classList.toggle('active')
-                    accountsHead[i].classList.toggle('active')
-                    accountsItem[i].classList.toggle('active-acc')
-                    accountsList[i].classList.add('accounts__check-list--show')
+                if (btn === item) {
+                    if (!item.classList.contains('active')) {
+                        accountsHeader[i].classList.toggle('active')
+                        accountsHead[i].classList.toggle('active')
+                        accountsItem[i].classList.toggle('active-acc')
+                        accountsList[i].classList.add('accounts__check-list--show')
 
-                    const h = getComputedStyle(accountsList[i]).height
+                        const h = getComputedStyle(accountsList[i]).height
 
-                    accountsList[i].style.height = '0'
-                    getComputedStyle(accountsList[i]).height
-                    accountsList[i].style.height = h
+                        accountsList[i].style.height = '0'
+                        getComputedStyle(accountsList[i]).height
+                        accountsList[i].style.height = h
 
-                    setTimeout(() => {
+                        setTimeout(() => {
+                            accountsList[i].style.height = ''
+                            accountsHead[i].style.overflow = 'visible'
+                        }, 360);
+                    } else {
+                        accountsList[i].style.height = getComputedStyle(accountsList[i]).height
+                        getComputedStyle(accountsList[i]).height
                         accountsList[i].style.height = ''
-                        accountsHead[i].style.overflow = 'visible'
-                    }, 360);
-                } else {
-                    accountsList[i].style.height = getComputedStyle(accountsList[i]).height
-                    getComputedStyle(accountsList[i]).height
-                    accountsList[i].style.height = ''
-                    accountsHead[i].style.overflow = 'hidden'
-                    accountsHeader[i].classList.toggle('active')
-                    accountsHead[i].classList.toggle('active')
-                    accountsItem[i].classList.toggle('active-acc')
-                    accountsList[i].classList.remove('accounts__check-list--show')
+                        accountsHead[i].style.overflow = 'hidden'
+                        accountsHeader[i].classList.toggle('active')
+                        accountsHead[i].classList.toggle('active')
+                        accountsItem[i].classList.toggle('active-acc')
+                        accountsList[i].classList.remove('accounts__check-list--show')
+                    }
                 }
-            }
-        })
-    } else if (e.target.matches('.accounts__head')) {
-        const btn = e.target.closest('.accounts__head');
+            })
+        } else if (e.target.matches('.accounts__head')) {
+            const btn = e.target.closest('.accounts__head');
 
-        accountsHeader.forEach((item, i) => {
-            e.preventDefault()
+            accountsHeader.forEach((item, i) => {
+                e.preventDefault()
 
-            if (btn === item) {
-                if (!item.classList.contains('active')) {
-                    accountsHeader[i].classList.toggle('active')
-                    accountsHead[i].classList.toggle('active')
-                    accountsItem[i].classList.toggle('active-acc')
-                    accountsList[i].classList.add('accounts__check-list--show')
+                if (btn === item) {
+                    if (!item.classList.contains('active')) {
+                        accountsHeader[i].classList.toggle('active')
+                        accountsHead[i].classList.toggle('active')
+                        accountsItem[i].classList.toggle('active-acc')
+                        accountsList[i].classList.add('accounts__check-list--show')
 
-                    const h = getComputedStyle(accountsList[i]).height
+                        const h = getComputedStyle(accountsList[i]).height
 
-                    accountsList[i].style.height = '0'
-                    getComputedStyle(accountsList[i]).height
-                    accountsList[i].style.height = h
+                        accountsList[i].style.height = '0'
+                        getComputedStyle(accountsList[i]).height
+                        accountsList[i].style.height = h
 
-                    setTimeout(() => {
+                        setTimeout(() => {
+                            accountsList[i].style.height = ''
+                            accountsHead[i].style.overflow = 'visible'
+                        }, 360);
+                    } else {
+                        accountsList[i].style.height = getComputedStyle(accountsList[i]).height
+                        getComputedStyle(accountsList[i]).height
                         accountsList[i].style.height = ''
-                        accountsHead[i].style.overflow = 'visible'
-                    }, 360);
-                } else {
-                    accountsList[i].style.height = getComputedStyle(accountsList[i]).height
-                    getComputedStyle(accountsList[i]).height
-                    accountsList[i].style.height = ''
-                    accountsHead[i].style.overflow = 'hidden'
-                    accountsHeader[i].classList.toggle('active')
-                    accountsHead[i].classList.toggle('active')
-                    accountsItem[i].classList.toggle('active-acc')
-                    accountsList[i].classList.remove('accounts__check-list--show')
+                        accountsHead[i].style.overflow = 'hidden'
+                        accountsHeader[i].classList.toggle('active')
+                        accountsHead[i].classList.toggle('active')
+                        accountsItem[i].classList.toggle('active-acc')
+                        accountsList[i].classList.remove('accounts__check-list--show')
+                    }
                 }
-            }
-        })
-    }
-})
+            })
+        }
+    })
+}
