@@ -18,6 +18,7 @@ const accounts = document.getElementById('accounts'),
     accountsHeader = document.querySelectorAll('.accounts__head'),
     accountsHead = document.querySelectorAll('.accounts__head-pointer'),
     accountsItem = document.querySelectorAll('.accounts__head-arrow--link'),
+    accountsArrow = document.querySelectorAll('.accounts__head-arrow--link > .icon'),
     accountsList = document.querySelectorAll('.accounts__check-list');
 
 if (accounts !== null) {
@@ -34,6 +35,7 @@ if (accounts !== null) {
                         accountsItem[i].classList.toggle('active-acc')
                         accountsHead[i].classList.toggle('active')
                         accountsList[i].classList.add('accounts__check-list--show')
+                        accountsArrow[i].classList.toggle('active')
 
                         const h = getComputedStyle(accountsList[i]).height
 
@@ -54,6 +56,7 @@ if (accounts !== null) {
                         accountsItem[i].classList.toggle('active-acc')
                         accountsHead[i].classList.toggle('active')
                         accountsList[i].classList.remove('accounts__check-list--show')
+                        accountsArrow[i].classList.toggle('active')
                     }
                 }
             })
@@ -69,6 +72,7 @@ if (accounts !== null) {
                         accountsHead[i].classList.toggle('active')
                         accountsItem[i].classList.toggle('active-acc')
                         accountsList[i].classList.add('accounts__check-list--show')
+                        accountsArrow[i].classList.toggle('active')
 
                         const h = getComputedStyle(accountsList[i]).height
 
@@ -89,6 +93,7 @@ if (accounts !== null) {
                         accountsHead[i].classList.toggle('active')
                         accountsItem[i].classList.toggle('active-acc')
                         accountsList[i].classList.remove('accounts__check-list--show')
+                        accountsArrow[i].classList.toggle('active')
                     }
                 }
             })
@@ -104,6 +109,7 @@ if (accounts !== null) {
                         accountsHead[i].classList.toggle('active')
                         accountsItem[i].classList.toggle('active-acc')
                         accountsList[i].classList.add('accounts__check-list--show')
+                        accountsArrow[i].classList.toggle('active')
 
                         const h = getComputedStyle(accountsList[i]).height
 
@@ -124,6 +130,7 @@ if (accounts !== null) {
                         accountsHead[i].classList.toggle('active')
                         accountsItem[i].classList.toggle('active-acc')
                         accountsList[i].classList.remove('accounts__check-list--show')
+                        accountsArrow[i].classList.toggle('active')
                     }
                 }
             })
