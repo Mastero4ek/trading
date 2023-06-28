@@ -83,7 +83,7 @@ if (accounts !== null) {
     })
 }
 
-//default style inputs
+//default inputs
 
 const defaultInputs = (formWrapperId) => {
     const form = document.getElementById(formWrapperId)
@@ -104,6 +104,38 @@ const defaultInputs = (formWrapperId) => {
 }
 
 defaultInputs('form')
+
+//disabled form controls
+
+const disabledControls = (formWrapperId) => {
+    const form = document.getElementById(formWrapperId)
+
+    if (form === null) return
+
+    const allInputs = form.querySelectorAll('.form-control > .form-input'),
+        policyCheck = form.querySelector('[name="check"]'),
+        formBtn = form.querySelector('.form-btn > .button');
+
+    allInputs.forEach(input => input.disabled = true)
+    policyCheck.disabled = true
+    formBtn.disabled = true
+}
+
+//active form controls
+
+const activeControls = (formWrapperId) => {
+    const form = document.getElementById(formWrapperId)
+
+    if (form === null) return
+
+    const allInputs = form.querySelectorAll('.form-control > .form-input'),
+        policyCheck = form.querySelector('[name="check"]'),
+        formBtn = form.querySelector('.form-btn > .button');
+
+    allInputs.forEach(input => input.disabled = false)
+    policyCheck.disabled = false
+    formBtn.disabled = false
+}
 
 //validation form
 
@@ -169,44 +201,34 @@ const sendForm = (formWrapperId) => {
     formBtnText.textContent = 'submit'
 
     const sendData = (data) => {
-        return fetch('./php/send.php', {
+        return fetch('../php/send.php', {
             method: 'POST',
-            body: JSON.stringify(data),
-            headers: {
-                "Content-Type": "application/json"
-            }
+            body: data,
         }).then(res => res.json())
     }
 
     const submitForm = () => {
-        const formData = new FormData(form),
-            formBody = {}
+        const formData = new FormData(form)
 
-        formBtn.disabled = true
-
-        formData.forEach((val, key) => {
-            if (val != '') formBody[key] = val
-        })
+        disabledControls(form)
 
         if (validation(formWrapperId)) {
-            sendData(formBody)
+            sendData(formData)
                 .then(data => {
-                    formBtn.disabled = true
+                    disabledControls(form)
                     formBtnText.textContent = 'send'
-
-                    console.log(formBody)
                 })
                 .catch(error => {
                     setTimeout(() => {
+                        activeControls(form)
                         formBtnText.textContent = 'submit'
-                        formBtn.disabled = false
                     }, 3000)
                 })
         } else {
             formBtnText.textContent = 'error'
             setTimeout(() => {
+                activeControls(form)
                 formBtnText.textContent = 'submit'
-                formBtn.disabled = false
             }, 3000)
         }
     }
