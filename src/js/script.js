@@ -21,119 +21,201 @@ const accounts = document.getElementById('accounts'),
     accountsArrow = document.querySelectorAll('.accounts__head-arrow--link > .icon'),
     accountsList = document.querySelectorAll('.accounts__check-list');
 
-if (accounts !== null) {
-    accounts.addEventListener('click', (e) => {
-        if (e.target.matches('.accounts__head-arrow--link')) {
-            const btn = e.target.closest('.accounts__head-arrow--link');
+const activeAccordeon = (e, block, elems) => {
+    const btn = e.target.closest(block);
 
-            accountsItem.forEach((item, i) => {
-                e.preventDefault()
+    elems.forEach((item, i) => {
+        e.preventDefault()
 
-                if (btn === item) {
-                    if (!item.classList.contains('active-acc')) {
-                        accountsHeader[i].classList.toggle('active')
-                        accountsItem[i].classList.toggle('active-acc')
-                        accountsHead[i].classList.toggle('active')
-                        accountsList[i].classList.add('accounts__check-list--show')
-                        accountsArrow[i].classList.toggle('active')
+        if (btn === item) {
+            if (!item.classList.contains('active') && !accountsItem[i].classList.contains('active-acc')) {
+                elems[i].classList.toggle('active')
 
-                        const h = getComputedStyle(accountsList[i]).height
+                accountsItem[i].classList.toggle('active-acc')
+                accountsHeader[i].classList.toggle('active')
+                accountsHead[i].classList.toggle('active')
+                accountsArrow[i].classList.toggle('active')
 
-                        accountsList[i].style.height = '0'
-                        getComputedStyle(accountsList[i]).height
-                        accountsList[i].style.height = h
+                accountsList[i].classList.toggle('accounts__check-list--show')
 
-                        setTimeout(() => {
-                            accountsList[i].style.height = ''
-                            accountsHead[i].style.overflow = 'visible'
-                        }, 360);
-                    } else {
-                        accountsList[i].style.height = getComputedStyle(accountsList[i]).height
-                        getComputedStyle(accountsList[i]).height
-                        accountsList[i].style.height = ''
-                        accountsHead[i].style.overflow = 'hidden'
-                        accountsHeader[i].classList.toggle('active')
-                        accountsItem[i].classList.toggle('active-acc')
-                        accountsHead[i].classList.toggle('active')
-                        accountsList[i].classList.remove('accounts__check-list--show')
-                        accountsArrow[i].classList.toggle('active')
-                    }
-                }
-            })
-        } else if (e.target.matches('.accounts__head-pointer')) {
-            const btn = e.target.closest('.accounts__head-pointer');
+                const h = getComputedStyle(accountsList[i]).height
 
-            accountsHead.forEach((item, i) => {
-                e.preventDefault()
+                accountsList[i].style.height = '0'
+                getComputedStyle(accountsList[i]).height
+                accountsList[i].style.height = h
 
-                if (btn === item) {
-                    if (!item.classList.contains('active')) {
-                        accountsHeader[i].classList.toggle('active')
-                        accountsHead[i].classList.toggle('active')
-                        accountsItem[i].classList.toggle('active-acc')
-                        accountsList[i].classList.add('accounts__check-list--show')
-                        accountsArrow[i].classList.toggle('active')
+                setTimeout(() => {
+                    accountsList[i].style.height = ''
+                    accountsHead[i].style.overflow = 'visible'
+                }, 360);
+            } else {
+                accountsList[i].style.height = getComputedStyle(accountsList[i]).height
+                getComputedStyle(accountsList[i]).height
+                accountsList[i].style.height = ''
+                accountsHead[i].style.overflow = 'hidden'
 
-                        const h = getComputedStyle(accountsList[i]).height
+                elems[i].classList.toggle('active')
 
-                        accountsList[i].style.height = '0'
-                        getComputedStyle(accountsList[i]).height
-                        accountsList[i].style.height = h
-
-                        setTimeout(() => {
-                            accountsList[i].style.height = ''
-                            accountsHead[i].style.overflow = 'visible'
-                        }, 360);
-                    } else {
-                        accountsList[i].style.height = getComputedStyle(accountsList[i]).height
-                        getComputedStyle(accountsList[i]).height
-                        accountsList[i].style.height = ''
-                        accountsHead[i].style.overflow = 'hidden'
-                        accountsHeader[i].classList.toggle('active')
-                        accountsHead[i].classList.toggle('active')
-                        accountsItem[i].classList.toggle('active-acc')
-                        accountsList[i].classList.remove('accounts__check-list--show')
-                        accountsArrow[i].classList.toggle('active')
-                    }
-                }
-            })
-        } else if (e.target.matches('.accounts__head')) {
-            const btn = e.target.closest('.accounts__head');
-
-            accountsHeader.forEach((item, i) => {
-                e.preventDefault()
-
-                if (btn === item) {
-                    if (!item.classList.contains('active')) {
-                        accountsHeader[i].classList.toggle('active')
-                        accountsHead[i].classList.toggle('active')
-                        accountsItem[i].classList.toggle('active-acc')
-                        accountsList[i].classList.add('accounts__check-list--show')
-                        accountsArrow[i].classList.toggle('active')
-
-                        const h = getComputedStyle(accountsList[i]).height
-
-                        accountsList[i].style.height = '0'
-                        getComputedStyle(accountsList[i]).height
-                        accountsList[i].style.height = h
-
-                        setTimeout(() => {
-                            accountsList[i].style.height = ''
-                            accountsHead[i].style.overflow = 'visible'
-                        }, 360);
-                    } else {
-                        accountsList[i].style.height = getComputedStyle(accountsList[i]).height
-                        getComputedStyle(accountsList[i]).height
-                        accountsList[i].style.height = ''
-                        accountsHead[i].style.overflow = 'hidden'
-                        accountsHeader[i].classList.toggle('active')
-                        accountsHead[i].classList.toggle('active')
-                        accountsItem[i].classList.toggle('active-acc')
-                        accountsList[i].classList.remove('accounts__check-list--show')
-                        accountsArrow[i].classList.toggle('active')
-                    }
-                }
-            })
+                accountsItem[i].classList.toggle('active-acc')
+                accountsHeader[i].classList.toggle('active')
+                accountsArrow[i].classList.toggle('active')
+                accountsHead[i].classList.toggle('active')
+                accountsList[i].classList.toggle('accounts__check-list--show')
+            }
         }
     })
 }
+
+if (accounts !== null) {
+    accounts.addEventListener('click', (e) => {
+        switch (true) {
+            case e.target.matches('.accounts__head-arrow--link'):
+                activeAccordeon(e, '.accounts__head-arrow--link', accountsItem)
+                break
+            case e.target.matches('.accounts__head-pointer'):
+                activeAccordeon(e, '.accounts__head-pointer', accountsHead)
+                break
+
+            case e.target.matches('.accounts__head'):
+                activeAccordeon(e, '.accounts__head', accountsHeader)
+                break
+        }
+    })
+}
+
+//default style inputs
+
+const defaultInputs = (formWrapperId) => {
+    const form = document.getElementById(formWrapperId)
+
+    if (form === null) return
+
+    const allInputs = form.querySelectorAll('.form-control > .form-input'),
+        policyCheck = form.querySelector('[name="check"]'),
+        checkBox = form.querySelector('[name="check"] ~ label > span');
+
+    allInputs.forEach((input) => {
+        input.addEventListener('input', () => {
+            input.classList.remove('input-error')
+        })
+    })
+
+    policyCheck.addEventListener('click', () => checkBox.classList.remove('checkbox-error'))
+}
+
+defaultInputs('form')
+
+//validation form
+
+const validateEmail = (email) => {
+    var emailStr = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return emailStr.test(email);
+}
+
+const validation = (formWrapperId) => {
+    const form = document.getElementById(formWrapperId)
+
+    if (form === null) return
+
+    const firstName = form.querySelector('[name="first-name"]'),
+        lastName = form.querySelector('[name="last-name"]'),
+        userEmail = form.querySelector('[name="mail"]'),
+        userPhone = form.querySelector('[name="tel"]'),
+        policyCheck = form.querySelector('[name="check"]'),
+        checkBox = form.querySelector('[name="check"] ~ label > span');
+
+    let success = true
+
+    if (firstName.value.length < 2) {
+        firstName.classList.add('input-error')
+        success = false
+    }
+
+    if (lastName.value.length < 2) {
+        lastName.classList.add('input-error')
+        success = false
+    }
+
+    if (!validateEmail(userEmail.value)) {
+        userEmail.classList.add('input-error')
+        success = false
+    }
+
+    if (userPhone.value.length < 5) {
+        userPhone.classList.add('input-error')
+        success = false
+    }
+
+    if (!policyCheck.checked) {
+        checkBox.classList.add('checkbox-error')
+        success = false
+    }
+
+    return success
+}
+
+// form
+
+const sendForm = (formWrapperId) => {
+    const form = document.getElementById(formWrapperId)
+
+    if (form === null) return
+
+    const formBtn = form.querySelector('.form-btn > .button'),
+        formBtnText = form.querySelector('.form-btn > .button > span')
+
+    form.reset()
+    formBtn.disabled = false
+    formBtnText.textContent = 'submit'
+
+    const sendData = (data) => {
+        return fetch('./php/send.php', {
+            method: 'POST',
+            body: JSON.stringify(data),
+            headers: {
+                "Content-Type": "application/json"
+            }
+        }).then(res => res.json())
+    }
+
+    const submitForm = () => {
+        const formData = new FormData(form),
+            formBody = {}
+
+        formBtn.disabled = true
+
+        formData.forEach((val, key) => {
+            if (val != '') formBody[key] = val
+        })
+
+        if (validation(formWrapperId)) {
+            sendData(formBody)
+                .then(data => {
+                    formBtn.disabled = true
+                    formBtnText.textContent = 'send'
+
+                    console.log(formBody)
+                })
+                .catch(error => {
+                    setTimeout(() => {
+                        formBtnText.textContent = 'submit'
+                        formBtn.disabled = false
+                    }, 3000)
+                })
+        } else {
+            formBtnText.textContent = 'error'
+            setTimeout(() => {
+                formBtnText.textContent = 'submit'
+                formBtn.disabled = false
+            }, 3000)
+        }
+    }
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault()
+
+        submitForm()
+    })
+}
+
+sendForm('form')
