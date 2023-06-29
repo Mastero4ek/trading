@@ -1,4 +1,4 @@
-//mobile-menu
+//mobile menu
 
 const burger = document.querySelector('.header__burger-link'),
     navMenu = document.querySelector('.header__nav'),
@@ -83,7 +83,7 @@ if (accounts !== null) {
     })
 }
 
-//default inputs
+//default style form inputs
 
 const defaultInputs = (formWrapperId) => {
     const form = document.getElementById(formWrapperId)
@@ -137,7 +137,7 @@ const activeControls = (formWrapperId) => {
     formBtn.disabled = false
 }
 
-//validation form
+//validation form inputs
 
 const validateEmail = (email) => {
     var emailStr = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -186,7 +186,7 @@ const validation = (formWrapperId) => {
     return success
 }
 
-// form
+// send form
 
 const sendForm = (formWrapperId) => {
     const form = document.getElementById(formWrapperId)
