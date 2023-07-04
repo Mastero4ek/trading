@@ -1,87 +1,91 @@
 //mobile menu
 
-const burger = document.querySelector('.header__burger-link'),
-    navMenu = document.querySelector('.header__nav'),
-    closeMenu = document.querySelector('.nav__close');
+const mobileMenu = () => {
+    const burger = document.querySelector('.header__burger-link'),
+        navMenu = document.querySelector('.header__nav'),
+        closeMenu = document.querySelector('.nav__close');
 
-burger.addEventListener('click', () => {
-    navMenu.classList.toggle('show')
-})
+    burger.addEventListener('click', () => {
+        navMenu.classList.toggle('show')
+    })
 
-closeMenu.addEventListener('click', () => {
-    navMenu.classList.toggle('show')
-})
+    closeMenu.addEventListener('click', () => {
+        navMenu.classList.toggle('show')
+    })
+}
 
-//accordeon
+mobileMenu()
 
-const accounts = document.getElementById('accounts'),
-    accountsHeader = document.querySelectorAll('.accounts__head'),
-    accountsHead = document.querySelectorAll('.accounts__head-pointer'),
-    accountsItem = document.querySelectorAll('.accounts__head-arrow--link'),
-    accountsArrow = document.querySelectorAll('.accounts__head-arrow--link > .icon'),
-    accountsList = document.querySelectorAll('.accounts__check-list');
+//accordeons
 
-const activeAccordeon = (e, block, elems) => {
-    const btn = e.target.closest(block);
+const accordeon = (wrapper, head, headPointer, headLink, headLinkActive, answer, answerShow) => {
+    const accordeonWrapper = document.querySelector(wrapper);
 
-    elems.forEach((item, i) => {
-        e.preventDefault()
+    if (accordeonWrapper === null) return
 
-        if (btn === item) {
-            if (!item.classList.contains('active') && !accountsItem[i].classList.contains('active-acc')) {
-                elems[i].classList.toggle('active')
+    const accordeonHead = accordeonWrapper.querySelectorAll(head),
+        accordeonPointer = accordeonWrapper.querySelectorAll(headPointer),
+        accordeonLink = accordeonWrapper.querySelectorAll(headLink),
+        accordeonAnswer = accordeonWrapper.querySelectorAll(answer);
 
-                accountsItem[i].classList.toggle('active-acc')
-                accountsHeader[i].classList.toggle('active')
-                accountsHead[i].classList.toggle('active')
-                accountsArrow[i].classList.toggle('active')
+    const activeAccordeon = (e, block, elems) => {
+        const btn = e.target.closest(block);
 
-                accountsList[i].classList.toggle('accounts__check-list--show')
+        elems.forEach((item, i) => {
+            e.preventDefault()
 
-                const h = getComputedStyle(accountsList[i]).height
+            if (btn === item) {
+                if (!item.classList.contains('active') && !accordeonLink[i].classList.contains(headLinkActive)) {
+                    accordeonLink[i].classList.toggle(headLinkActive)
+                    accordeonAnswer[i].classList.toggle(answerShow)
+                    elems[i].classList.toggle('active')
+                    accordeonHead[i].classList.toggle('active')
+                    accordeonPointer[i].classList.toggle('active')
 
-                accountsList[i].style.height = '0'
-                getComputedStyle(accountsList[i]).height
-                accountsList[i].style.height = h
+                    const h = getComputedStyle(accordeonAnswer[i]).height
 
-                setTimeout(() => {
-                    accountsList[i].style.height = ''
-                    accountsHead[i].style.overflow = 'visible'
-                }, 360);
-            } else {
-                accountsList[i].style.height = getComputedStyle(accountsList[i]).height
-                getComputedStyle(accountsList[i]).height
-                accountsList[i].style.height = ''
-                accountsHead[i].style.overflow = 'hidden'
+                    accordeonAnswer[i].style.height = '0'
+                    getComputedStyle(accordeonAnswer[i]).height
+                    accordeonAnswer[i].style.height = h
 
-                elems[i].classList.toggle('active')
+                    setTimeout(() => {
+                        accordeonAnswer[i].style.height = ''
+                        accordeonPointer[i].style.overflow = 'visible'
+                    }, 360);
+                } else {
+                    accordeonAnswer[i].style.height = getComputedStyle(accordeonAnswer[i]).height
+                    getComputedStyle(accordeonAnswer[i]).height
+                    accordeonAnswer[i].style.height = ''
+                    accordeonPointer[i].style.overflow = 'hidden'
 
-                accountsItem[i].classList.toggle('active-acc')
-                accountsHeader[i].classList.toggle('active')
-                accountsArrow[i].classList.toggle('active')
-                accountsHead[i].classList.toggle('active')
-                accountsList[i].classList.toggle('accounts__check-list--show')
+                    accordeonAnswer[i].classList.toggle(answerShow)
+                    accordeonLink[i].classList.toggle(headLinkActive)
+                    elems[i].classList.toggle('active')
+                    accordeonHead[i].classList.toggle('active')
+                    accordeonPointer[i].classList.toggle('active')
+                }
             }
-        }
-    })
-}
+        })
+    }
 
-if (accounts !== null) {
-    accounts.addEventListener('click', (e) => {
+    accordeonWrapper.addEventListener('click', (e) => {
         switch (true) {
-            case e.target.matches('.accounts__head-arrow--link'):
-                activeAccordeon(e, '.accounts__head-arrow--link', accountsItem)
+            case e.target.matches(headLink):
+                activeAccordeon(e, headLink, accordeonLink)
                 break
-            case e.target.matches('.accounts__head-pointer'):
-                activeAccordeon(e, '.accounts__head-pointer', accountsHead)
+            case e.target.matches(headPointer):
+                activeAccordeon(e, headPointer, accordeonPointer)
                 break
 
-            case e.target.matches('.accounts__head'):
-                activeAccordeon(e, '.accounts__head', accountsHeader)
+            case e.target.matches(head):
+                activeAccordeon(e, head, accordeonHead)
                 break
         }
     })
 }
+
+accordeon('.accounts__wrap', '.accounts__head', '.accounts__head-pointer', '.accounts__head-arrow--link', 'active-accounts-link', '.accounts__check-list', 'accounts__check-list--show')
+accordeon('.faq__wrap', '.faq__head', '.faq__head-pointer', '.faq__head-arrow--link', 'active-faq-link', '.faq__answer', 'faq__answer--show')
 
 //default style form inputs
 
