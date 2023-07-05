@@ -202,7 +202,6 @@ const sendForm = (formWrapperId) => {
 
     form.reset()
     formBtn.disabled = false
-    formBtnText.textContent = 'submit'
 
     const sendData = (data) => {
         return fetch('../php/send.php', {
@@ -214,24 +213,24 @@ const sendForm = (formWrapperId) => {
     const submitForm = () => {
         const formData = new FormData(form)
 
-        disabledControls(form)
+        disabledControls('form')
 
         if (validation(formWrapperId)) {
             sendData(formData)
                 .then(data => {
-                    disabledControls(form)
-                    formBtnText.textContent = 'send'
+                    disabledControls('form')
+                    formBtnText.textContent = 'ok'
                 })
                 .catch(error => {
                     setTimeout(() => {
-                        activeControls(form)
+                        activeControls('form')
                         formBtnText.textContent = 'submit'
                     }, 3000)
                 })
         } else {
             formBtnText.textContent = 'error'
             setTimeout(() => {
-                activeControls(form)
+                activeControls('form')
                 formBtnText.textContent = 'submit'
             }, 3000)
         }
