@@ -28,4 +28,9 @@
     <rect width="40" height="40" rx="20" fill="#FE7E47"></rect>
     <path d="M18 25L23 20L18 15" stroke="white" stroke-width="2"></path>
   </symbol>
+
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-education">
+    <rect width="24" height="24" rx="12"></rect>
+    <path d="M10 17L15 12L10 7" stroke="#FE7E47" stroke-width="2"></path>
+  </symbol>
 </svg>
