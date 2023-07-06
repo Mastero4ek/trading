@@ -50,13 +50,11 @@ const accordeon = (wrapper, head, headPointer, headLink, headLinkActive, answer,
 
                     setTimeout(() => {
                         accordeonAnswer[i].style.height = ''
-                        accordeonHead[i].style.overflow = 'visible'
                     }, 360);
                 } else {
                     accordeonAnswer[i].style.height = getComputedStyle(accordeonAnswer[i]).height
                     getComputedStyle(accordeonAnswer[i]).height
                     accordeonAnswer[i].style.height = ''
-                    accordeonHead[i].style.overflow = 'hidden'
 
                     accordeonAnswer[i].classList.toggle(answerShow)
                     accordeonLink[i].classList.toggle(headLinkActive)
