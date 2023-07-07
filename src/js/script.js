@@ -5,11 +5,13 @@ const mobileMenu = () => {
         navMenu = document.querySelector('.header__nav'),
         closeMenu = document.querySelector('.nav__close');
 
-    burger.addEventListener('click', () => {
+    burger.addEventListener('click', (e) => {
+        e.preventDefault()
         navMenu.classList.toggle('show')
     })
 
-    closeMenu.addEventListener('click', () => {
+    closeMenu.addEventListener('click', (e) => {
+        e.preventDefault()
         navMenu.classList.toggle('show')
     })
 }
