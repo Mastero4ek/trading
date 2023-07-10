@@ -244,3 +244,37 @@ const sendForm = (formWrapperId) => {
 }
 
 sendForm('form')
+
+//modal
+
+// const overlay = document.querySelector('.overlay'),
+// 	  modal = document.querySelector('.modal'),
+// 	  closeBtn = document.querySelector('.form__button-close'),
+// 	  body = document.querySelector('body'),
+// 	  clientWidth = document.documentElement.clientWidth,//видимая ширина экрана
+//       innerWidth = window.innerWidth;//полная ширина экрана
+// 	  heroBtn = document.querySelector('.hero__button');
+
+// 	  overlay.style.transitionDuration = '0.36s';
+// 	  modal.style.transitionDuration = '0.36s';
+
+// 	  heroBtn.addEventListener('click', () => {
+// 	  	overlay.classList.add('overlay-open');
+// 	  	overlay.style.paddingRight = innerWidth - clientWidth + 'px';
+// 	  	modal.classList.add('modal-open');
+// 	  	heroBtn.classList.add('button--active');
+// 	  	body.classList.add('noscroll');
+//         body.style.paddingRight = innerWidth - clientWidth + 'px';//добавляем padding = ширине вертикального скролла
+// 	  });
+
+// 	  overlay.addEventListener('click', (e) => {
+// 	  	const target = e.target;
+// 	  		if(target === overlay || target.closest('.form__button-close')) {
+// 	  			overlay.classList.remove('overlay-open');
+// 	  			overlay.style.paddingRight = null;
+// 	  			modal.classList.remove('modal-open');
+// 	  			heroBtn.classList.remove('button--active');
+// 	  			body.classList.remove('noscroll');
+// 	  			body.style.paddingRight = null;//обнуляем padding
+// 	  		}
+// 	  });

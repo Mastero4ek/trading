@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script defer src="js/script.js"></script>
+
+    <title></title>
+</head>
+
+<body style="background: linear-gradient(90deg, #2B32B2 0%, #1488CC 100%);">
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="container">
+                <div class="header__logo logo">
+                    <a href="./index.html" class="logo__link">
+                        <img src="./img/logo.svg" alt="logo" class="logo__img">
+
+                        <span>xcgin</span>
+                    </a>
+                </div>
+
+                <nav class="header__nav nav">
+                    <ul class="nav__wrapper">
+                        <li class="nav__item">
+                            <a href="./index.html" class="nav__item-head">home</a>
+                        </li>
+
+                        <li class="nav__item dropbox dropbox--side">
+                            <div class="nav__item-head dropbox__header">
+                                <span>trading</span>
+                                <svg class="icon">
+                                    <use xlink:href="./img/icons.svg#arrow-header"></use>
+                                </svg>
+                            </div>
+
+                            <ul id="trading" class="nav__item-body dropbox__body dropbox__body--side">
+                                <li class="dropbox__body-item">
+                                    <a href="./markets.html" class="dropbox__body-link">Markets</a>
+                                </li>
+
+                                <li class="dropbox__body-item">
+                                    <a href="./accounts.html" class="dropbox__body-link">Accounts</a>
+                                </li>
+
+                                <li class="dropbox__body-item">
+                                    <a href="./deposits.html" class="dropbox__body-link">Deposits</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav__item dropbox dropbox--side">
+                            <div class="nav__item-head dropbox__header">
+                                <span>company</span>
+                                <svg class="icon">
+                                    <use xlink:href="./img/icons.svg#arrow-header"></use>
+                                </svg>
+                            </div>
+
+                            <ul id="company" class="nav__item-body dropbox__body dropbox__body--side">
+                                <li class="dropbox__body-item">
+                                    <a href="./about-us.html" class="dropbox__body-link">About</a>
+                                </li>
+
+                                <li class="dropbox__body-item">
+                                    <a href="./careers.html" class="dropbox__body-link">Us Careers</a>
+                                </li>
+
+                                <li class="dropbox__body-item">
+                                    <a href="./contacts.html" class="dropbox__body-link">Contact Us</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav__item dropbox dropbox--side">
+                            <div class="nav__item-head dropbox__header">
+                                <span>learn</span>
+                                <svg class="icon">
+                                    <use xlink:href="./img/icons.svg#arrow-header"></use>
+                                </svg>
+                            </div>
+
+                            <ul id="learn" class="nav__item-body dropbox__body dropbox__body--side">
+                                <li class="dropbox__body-item">
+                                    <a href="./education.html" class="dropbox__body-link">Trading Hours</a>
+                                </li>
+
+                                <li class="dropbox__body-item">
+                                    <a href="./calendar.html" class="dropbox__body-link">Economic Calendar</a>
+                                </li>
+
+                                <li class="dropbox__body-item">
+                                    <a href="./faq.html" class="dropbox__body-link">Trading FAQ</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav__item lang">
+                            <ul class="lang__list">
+                                <li class="lang__item">
+                                    <a href="#" class="lang__link">En</a>
+                                </li>
+
+                                <li class="lang__item">
+                                    <a href="#" class="lang__link">Es</a>
+                                </li>
+
+                                <li class="lang__item">
+                                    <a href="#" class="lang__link">De</a>
+                                </li>
+
+                                <li class="lang__item">
+                                    <a href="#" class="lang__link">It</a>
+                                </li>
+
+                                <li class="lang__item">
+                                    <a href="#" class="lang__link">Sv</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <a href="#" class="nav__close">
+                            <img src="./img/header/close.svg" alt="close">
+                        </a>
+                    </ul>
+                </nav>
+
+                <div class="header__burger">
+                    <a href="#" class="header__burger-link">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+
+                <div class="header__set set">
+                    <div class="set__lang dropbox">
+                        <div class="lang__item-head dropbox__header">
+                            <span>en</span>
+                            <svg class="icon">
+                                <use xlink:href="./img/icons.svg#arrow-header"></use>
+                            </svg>
+                        </div>
+
+                        <ul id="language" class="lang__item-body dropbox__body">
+                            <li class="dropbox__body-item">
+                                <a href="#" class="dropbox__body-link">English</a>
+                            </li>
+
+                            <li class="dropbox__body-item">
+                                <a href="#" class="dropbox__body-link">Spanish</a>
+                            </li>
+
+                            <li class="dropbox__body-item">
+                                <a href="#" class="dropbox__body-link">German</a>
+                            </li>
+
+                            <li class="dropbox__body-item">
+                                <a href="#" class="dropbox__body-link">Italian</a>
+                            </li>
+
+                            <li class="dropbox__body-item">
+                                <a href="#" class="dropbox__body-link">Swedish</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="set__buttons auth">
+                        <div class="auth__login">
+                            <a href="#" class="auth__link link">login</a>
+                        </div>
+
+                        <div class="auth__register">
+                            <a href="#" class="auth__link link">register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="error-page">
+        <div class="error-page__wrapper">
+            <div class="error-page__img">
+                <img src="./img/error-page/404.svg" alt="404">
+            </div>
+
+            <h1 class="title error-page__title">Page not found</h1>
+
+            <div class="error-page__desc">This page doesn’t exist or was removed!
+                We suggest you back to home.</div>
+
+            <div class="error-page__button">
+                <a href="#" class="button error-page__link">
+                    <span>Back to home</span>
+
+                    <img src="./img/main/arrow-in.svg" alt="arrow">
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
